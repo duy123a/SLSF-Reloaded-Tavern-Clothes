@@ -3,6 +3,7 @@ Scriptname Restia_WhoreClothesEquip extends ObjectReference
 Actor Property PlayerRef Auto 
 
 Event OnEquipped(Actor akActor)
+
 	If akActor == PlayerRef
 		Int EventHandle = ModEvent.Create("SLSF_Reloaded_SetWhoreFlag")
 		If (EventHandle)
@@ -15,6 +16,7 @@ Event OnEquipped(Actor akActor)
 EndEvent
 
 Event OnUnequipped(Actor akActor)
+	
 	If akActor == PlayerRef
 		Int EventHandle = ModEvent.Create("SLSF_Reloaded_SetWhoreFlag")
 		If (EventHandle)
